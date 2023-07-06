@@ -1,0 +1,12 @@
+fieldset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #cdaf7b;
+  border-radius: 20px;
+}
+
+/*body{
+	background-color: cadetblue;
+}*/
