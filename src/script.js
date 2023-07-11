@@ -1,21 +1,22 @@
 const admUser = 'robson';
 const passwordAdm = 'xaverinhu';
 
-let users = []; // Array para armazenar os usuários
-
+let users = [admUser, passwordAdm]; // Array para armazenar os usuários
+console.log(users)
 // Função para buscar os usuários armazenados no Local Storage
 function getUsersFromLocalStorage() {
     const storedUsers = localStorage.getItem('users');
     if (storedUsers) {
         users = JSON.parse(storedUsers);
     }
+    console.log(users);
 }
 
 // Chamar a função para buscar os usuários ao carregar a página
-getUsersFromLocalStorage();
+//getUsersFromLocalStorage();
 
 // Exibir os usuários no console
-console.log(users);
+//console.log(users);
 
 function login(event) {
     event.preventDefault(); // Impede o envio do formulário
@@ -31,26 +32,31 @@ function login(event) {
         alert('login ou senha errada');
     }
 
-    const data = [nameUser, passPassword];
-    console.log(data);
+   //const data = [nameUser, passPassword];
+    //console.log(data);
 
     // Armazena o primeiro usuário no array de usuários
-    if (users.length === 0) {
+    /*if (users.length > 0) {
         users.push({ username: nameUser, password: passPassword });
-    }
+    }*/
 }
 
-function adicionarUsuario(event) {
+
+
+function newUser(event) {
+	
     event.preventDefault(); // Impede o envio do formulário
 
     const newUsername = document.getElementById('new-username').value;
     const newPassword = document.getElementById('new-password').value;
 
     // Adiciona o novo usuário ao array de usuários
-    users.push({ username: newUsername, password: newPassword });
+    users.push(newUsername, newPassword);
 
     // Salva o array atualizado no Local Storage
     localStorage.setItem('users', JSON.stringify(users));
+
+    getUsersFromLocalStorage();
 
     // Exemplo de exibição de mensagem de sucesso
     alert('Novo usuário adicionado com sucesso!');
@@ -58,4 +64,9 @@ function adicionarUsuario(event) {
     // Limpa os campos do formulário
     document.getElementById('new-username').value = '';
     document.getElementById('new-password').value = '';
+    return;
+    console.log(users);
+
 }
+
+//getUsersFromLocalStorage();
