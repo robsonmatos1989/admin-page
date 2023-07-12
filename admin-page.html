@@ -7,10 +7,13 @@
 	<title>ADM_PAGE</title>
 </head>
 <body>
-	<h2 align="center">SEJA BEM VINDO</h2>
-
-
-<div class="container">
+	
+		<h2 align="center">SEJA BEM VINDO</h2>
+		
+	<div id="link-crud">
+		<a href="CRUD/index.html">Ir para o banco de dados</a>
+	</div>	
+<div id="cont"class="container">
 <fieldset style="width: 50%">
 	<form id="add-user-form">
 		  <h2 align="center">Adicionar Novo Usuário</h2>
@@ -20,7 +23,7 @@
 		  <label for="new-password">Senha:</label>
 		  <input type="password" id="new-password" required>
 
-		  <button onclick="newUser(event)" type="submit">Adicionar Usuário</button>
+		  <button id="add"onclick="newUser(event)" type="submit">Adicionar Usuário</button>
 	</form>
 </fieldset>
 </div>	

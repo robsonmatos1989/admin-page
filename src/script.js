@@ -44,7 +44,7 @@ function login(event) {
 
 
 function newUser(event) {
-	
+    
     event.preventDefault(); // Impede o envio do formulário
 
     const newUsername = document.getElementById('new-username').value;
@@ -61,12 +61,29 @@ function newUser(event) {
     // Exemplo de exibição de mensagem de sucesso
     alert('Novo usuário adicionado com sucesso!');
 
-    // Limpa os campos do formulário
-    document.getElementById('new-username').value = '';
-    document.getElementById('new-password').value = '';
+    window.location.href = 'login.html';
     return;
     console.log(users);
+
+    
 
 }
 
 //getUsersFromLocalStorage();
+
+    const botaoOcultar = document.getElementById('add');
+    const formulario = document.getElementById('cont');
+
+    botaoOcultar.addEventListener('click', function() {
+    formulario.style.display = 'none';
+});
+
+function loginUser(event){
+    event.preventDefault(); // Impede o envio do formulário
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    if(){
+        
+    }
+}
