@@ -6,7 +6,6 @@ fieldset {
   background-color: #cdaf7b;
   border-radius: 20px;
 }
-
-/*body{
-	background-color: cadetblue;
-}*/
+.container{
+  justify-content: center;
+}

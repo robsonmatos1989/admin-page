@@ -1,5 +1,5 @@
 const admUser = 'robson';
-const passwordAdm = 'xaverinhu';
+const passwordAdm = 'admin';
 
 let users = [admUser, passwordAdm]; // Array para armazenar os usuários
 console.log(users)

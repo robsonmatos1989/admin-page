@@ -3,24 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="src/style.css">
 	<title>ADM_PAGE</title>
 </head>
 <body>
 	<h2 align="center">SEJA BEM VINDO</h2>
 
 
-
-
+<div class="container">
+<fieldset style="width: 50%">
 	<form id="add-user-form">
-  <h2>Adicionar Novo Usuário</h2>
-  <label for="new-username">Nome de Usuário:</label>
-  <input type="text" id="new-username" required>
+		  <h2 align="center">Adicionar Novo Usuário</h2>
+		  <label for="new-username">Nome de Usuário:</label>
+		  <input type="text" id="new-username" required>
 
-  <label for="new-password">Senha:</label>
-  <input type="password" id="new-password" required>
+		  <label for="new-password">Senha:</label>
+		  <input type="password" id="new-password" required>
 
-  <button onclick="newUser(event)" type="submit">Adicionar Usuário</button>
-</form>
+		  <button onclick="newUser(event)" type="submit">Adicionar Usuário</button>
+	</form>
+</fieldset>
+</div>	
 <script type="text/javascript" src="src/script.js"></script>
 </body>
 </html>
