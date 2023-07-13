@@ -21,7 +21,7 @@ function login(event) {
   if (nameUser === admUser && passPassword === passwordAdm) {
     alert('Está certo');
     redirectToPage('admin-page.html'); // Redireciona para a página do administrador
-    return; // Importante adicionar o "return" para interromper a execução do código após o redirecionamento
+    return; // "return" para interromper a execução do código após o redirecionamento
   } else {
     alert('Login ou senha incorretos');
   }
